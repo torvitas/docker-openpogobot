@@ -6,8 +6,8 @@ This wraps [OpenPoGoBot](https://github.com/OpenPoGo/OpenPoGoBot) in a docker im
 
 ## Quickstart
 ```
-git clone https://github.com/OpenPoGo/OpenPoGoBot.git
-cd OpenPoGoBot
+git clone https://github.com/torvitas/docker-openpogobot.git
+cd docker-openpogobot
 docker-compose run --rm -e PGB_USER="googleusername" -e PGB_PASSWORD="googlepassword" pogobot
 ```
 ## Configuration
