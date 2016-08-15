@@ -4,6 +4,19 @@
 
 This wraps [OpenPoGoBot](https://github.com/OpenPoGo/OpenPoGoBot) in a docker image.
 
+## Prerequisites
+
+Before you can use the bot, you have to take a few steps in order to access the Google APIs:
+
+1. Create a Google account if you don't already have one
+2. Log-in to the [Google Developer Console](https://console.developers.google.com/)
+3. Create a new project, name it however you like
+4. In **Credentials**, create a new Server API key for the project
+5. In your **Dashboard**, enable the
+  - 'Google Maps Directions API' and the
+  - 'Google Maps Geocoding API'
+6. Done!
+
 ## Quickstart
 ```
 git clone https://github.com/torvitas/docker-openpogobot.git
