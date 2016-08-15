@@ -17,8 +17,6 @@ RUN mkdir -p /usr/local/pogobot && \
     cd /usr/local/pogobot && \
     git clone --recursive https://github.com/torvitas/OpenPoGoBot.git . && \
     git checkout 274e254d02bd4763b49ce1180b7e6cbf2592d6b7 && \
-    git submodule foreach git pull origin master && \
-    git submodule foreach git checkout master && \
     virtualenv env && \
     source env/bin/activate && \
     pip install setuptools pip --upgrade && \
