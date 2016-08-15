@@ -1,0 +1,15 @@
+var userInfo = {
+	users: ["${PGB_USER:-username}"],
+	userZoom: ${PGB_WEB_USER_ZOOM:-true},
+	zoom: ${PGB_WEB_ZOOM:-16},
+	userFollow: ${PGB_WEB_USER_FOLLOW:-true},
+	gMapsAPIKey: "${PGB_GOOGLE_API_KEY:-YOUR_API_KEY_HERE}",
+	botPath: ${PGB_WEB_BOT_PATH:-true},
+	actionsEnabled: ${PGB_WEB_ACTIONS_ENABLED:-true}
+};
+//milliseconds
+var dataUpdates = {
+    updateTrainer: ${PGB_WEB_UPDATE_TRAINER:-1000},
+    addCatchable: ${PGB_WEB_ADD_CATCHABLE:-1000},
+    addInventory: ${PGB_WEB_ADD_INVENTORY:-5000}
+};
