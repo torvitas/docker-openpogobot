@@ -14,7 +14,7 @@ RUN yum -y install epel-release && \
 
 RUN mkdir -p /usr/local/pogobot && \
     cd /usr/local/pogobot && \
-    git clone --recursive https://www.github.com/OpenPoGo/OpenPoGoBot . && \
+    git clone --recursive https://github.com/torvitas/OpenPoGoBot.git . && \
     git submodule foreach git pull origin master && \
     git submodule foreach git checkout master && \
     virtualenv env && \
@@ -27,12 +27,12 @@ RUN cd /tmp/ && \
     tar zxvf pgoencrypt.tar.gz && \
     cd pgoencrypt/src/ && \
     make lib && \
-    cp -r * /usr/local/pogobot/ && \
+    cp -r libencrypt.so /usr/local/lib/ && \
     cd / && \
     rm -rf /tmp/*
 WORKDIR "/usr/local/pogobot/"
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-CMD ["python", "pokecli.py", "--config-json", "/usr/local/etc/pogobot.config.json"]
-VOLUME ["/usr/local/pogobot/web"]
+CMD ["python", "pokecli.py"]
+VOLUME ["/usr/local/pogobot/data"]
 COPY src/ /usr/local/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
