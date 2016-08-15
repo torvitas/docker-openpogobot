@@ -1,5 +1,6 @@
 pogobot:
     build: .
+    restart: always
     environment:
         VIRTUAL_HOST: "pokesock.*"
         PGB_USER: "username"
