@@ -3,6 +3,7 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/torvitas/openpogobot.svg?maxAge=2592000)]()
 
 This wraps [OpenPoGoBot](https://github.com/OpenPoGo/OpenPoGoBot) in a docker image.
+Automated builds of the image are available on [Dockerhub](https://hub.docker.com/r/torvitas/pogobot) and is the recommended method of installation.
 
 ## Prerequisites
 
