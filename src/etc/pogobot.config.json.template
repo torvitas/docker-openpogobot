@@ -19,7 +19,7 @@
     "distance_unit": ${PGB_DISTANCE_UNIT:-\"km\"},
     "evolve_pokemon": ${PGB_EVOLVE_POKEMON:-true},
     "evolve_filter": ${PGB_EVOLVE_FILTER:-[\"Pidgey\", \"Rattata\", \"Spearow\", \"Weedle\"]},
-    "item_filter": ${PGB_ITEM_FILTER:-{\"1\": { \"keep\": 50 }, \"101\": { \"keep\": 10 }, \"102\": { \"keep\": 30 }, \"103\": { \"keep\": 30 }, \"201\": { \"keep\": 30 }, \"701\": { \"keep\": 100 }}},
+    "item_filter": ${PGB_ITEM_FILTER:-{\"1\": { \"keep\": 50 \}, \"101\": { \"keep\": 10 \}, \"102\": { \"keep\": 30 \}, \"103\": { \"keep\": 30 \}, \"201\": { \"keep\": 30 \}, \"701\": { \"keep\": 100 \}\}},
     "path_finder": ${PGB_PATH_FINDER:-\"google\"},
     "navigator": ${PGB_NAVIGATOR:-\"fort\"},
     "navigator_waypoints": ${PGB_NAVIGATOR_WAYPOINTS:-[]},
