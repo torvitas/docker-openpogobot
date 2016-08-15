@@ -1,11 +1,11 @@
 # Docker OpenPoGoBot
 
 ## Quickstart
-`
+```
 git clone https://github.com/OpenPoGo/OpenPoGoBot.git
 cd OpenPoGoBot
 docker-compose run --rm -e PGB_USER="googleusername" -e PGB_PASSWORD="googlepassword" pogobot
-`
+```
 ## Configuration
 
 | Environment Variable | Corresponding Flag |
