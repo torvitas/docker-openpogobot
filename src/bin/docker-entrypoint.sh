@@ -6,15 +6,16 @@ source /usr/local/lib/template.renderer.sh
 
 export LD_LIBRARY_PATH=$(pwd):$LD_LIBRARY_PATH
 
-echo "### Rendering config.json"
-render /usr/local/etc/pogobot.config.json.template -- > /usr/local/etc/pogobot.config.json
-cat /usr/local/etc/pogobot.config.json
-
-## web server plugin is broken, so this has no effect, yet.
-echo "### Rendering userdata.js"
-render /usr/local/etc/pogobot.userdata.js.template -- > /usr/local/pogobot/web/config/userdata.js
-cat /usr/local/pogobot/web/config/userdata.js
+echo "### Rendering configuration files.."
+rm -rf config/config.yml.example config/plugins/*
+render /usr/local/templates/pogobot.config.yml.template -- > /usr/local/pogobot/config/config.yml
+cat /usr/local/pogobot/config/config.yml
+render /usr/local/templates/pogobot.egg_incubator.yml.template -- > /usr/local/pogobot/config/plugins/egg_incubator.yml
+render /usr/local/templates/pogobot.evolve_pokemon.yml.template -- > /usr/local/pogobot/config/plugins/evolve_pokemon.yml
+render /usr/local/templates/pogobot.recycle_items.yml.template -- > /usr/local/pogobot/config/plugins/recycle_items.yml
+render /usr/local/templates/pogobot.transfer_pokemon.yml.template -- > /usr/local/pogobot/config/plugins/transfer_pokemon.yml
+cat /usr/local/pogobot/config/plugins/*.yml
 
 cd ${wd}
 
-exec ${@}
+exec ${@} config/config.yml

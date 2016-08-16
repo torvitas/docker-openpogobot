@@ -10,3 +10,5 @@ stop:
 	docker-compose stop
 down:
 	docker-compose down
+pull:
+	git pull
