@@ -14,7 +14,7 @@
 #####################################################################
 
 # Set to true to transfer Pokemon when bot starts.
-transfer_on_start: false
+transfer_on_start: ${PGB_TRANSFER_ON_START:-false}
 
 use_always_keep_filter: true
 use_cp_iv_filter: true
