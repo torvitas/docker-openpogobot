@@ -13,10 +13,11 @@ RUN yum -y install epel-release && \
     yum -y clean all
 
 ENV OpenPoGoBotVersion 274e254d02bd4763b49ce1180b7e6cbf2592d6b7
+ENV OpenPoGoBotRepository https://github.com/torvitas/OpenPoGoBot.git
 RUN mkdir -p /usr/local/pogobot && \
     cd /usr/local/pogobot && \
-    git clone --recursive https://github.com/torvitas/OpenPoGoBot.git . && \
-    git checkout 274e254d02bd4763b49ce1180b7e6cbf2592d6b7 && \
+    git clone ${OpenPoGoBotRepository} . && \
+    git checkout ${OpenPoGoBotVersion} && \
     virtualenv env && \
     source env/bin/activate && \
     pip install setuptools pip --upgrade && \
