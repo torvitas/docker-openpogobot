@@ -3,16 +3,13 @@ pogobot:
     restart: always
     environment:
         VIRTUAL_HOST: "pokesock.*"
-        PGB_USER: "username"
+        PGB_USERNAME: "username"
         PGB_PASSWORD: "password"
         PGB_GOOGLE_API_KEY: "google-api-key"
         PGB_LOCATION: "40.7811648,-73.9720392"
-        PGB_INCUBATION_FILL: "true"
-        PGB_INCUBATION_USE_ALL: "true"
         PGB_RECYCLE_ITEMS: "true"
-        PGB_EXCLUDE_PLUGINS: "web"
         PGB_INITIAL_TRANSFER: "true"
-        PGB_WALK: "6"
+        PGB_WALK_SPEED: "6"
     expose:
         - 8000
     volumes:
