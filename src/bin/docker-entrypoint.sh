@@ -14,6 +14,7 @@ render /usr/local/templates/pogobot.egg_incubator.yml.template -- > /usr/local/p
 render /usr/local/templates/pogobot.evolve_pokemon.yml.template -- > /usr/local/pogobot/config/plugins/evolve_pokemon.yml
 render /usr/local/templates/pogobot.recycle_items.yml.template -- > /usr/local/pogobot/config/plugins/recycle_items.yml
 render /usr/local/templates/pogobot.transfer_pokemon.yml.template -- > /usr/local/pogobot/config/plugins/transfer_pokemon.yml
+render /usr/local/templates/pogobot.socket.yml.template -- > /usr/local/pogobot/config/plugins/socket.yml
 cat /usr/local/pogobot/config/plugins/*.yml
 
 cd ${wd}

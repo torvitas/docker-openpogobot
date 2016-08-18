@@ -21,7 +21,7 @@ login:
     auth_service: "${PGB_AUTH_SERVICE:-google}"
 
     # Should be self explanatory
-    username: "${PGB_USER:-YOURACCOUNT@gmail.com}"
+    username: "${PGB_USERNAME:-YOURACCOUNT@gmail.com}"
     password: "${PGB_PASSWORD:-YOURPASSWORD}"
 
 mapping:
@@ -37,6 +37,9 @@ mapping:
     # Specify what units for distance the bot should use
     distance_unit: "${PGB_DISTANCE_UNIT:-km}"
 
+    # The radius (in meters) to fetch cell data for. Cell data includes pokestops and nearby pokemon
+    # Max value is 1500
+    cell_radius: ${PGB_CELL_RADIUS:-500}
 movement:
     # Use Google Maps Direction API (google) or just walk directly (direct)
     path_finder: "${PGB_PATH_FINDER:-google}"
@@ -54,7 +57,7 @@ movement:
     navigator_campsite: ${PGB_NAVIGATOR_CAMPSITE:-null}
 
     # Specify how fast the bot should walk, in meters/second
-    walk_speed: ${PGB_WALK:-4.16}
+    walk_speed: ${PGB_WALK_SPEED:-4.16}
 
 plugins:
     # Do not automatically load the specified plugins
@@ -62,7 +65,9 @@ plugins:
         - web
 
     # Load plugins that are not in the plugins/ folder
-    include: ${PGB_INCLUDE:-[]}
+    include:
+        - ./plugins
 
     # Load plugin YAML config files from this folder
-    config: "${PGB_CONFIG:-config/plugins}"
+    config:
+        - "${PGB_CONFIG:-plugins}"
