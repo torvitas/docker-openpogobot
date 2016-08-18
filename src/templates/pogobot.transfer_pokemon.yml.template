@@ -16,612 +16,904 @@
 # Set to true to transfer Pokemon when bot starts.
 transfer_on_start: ${PGB_TRANSFER_ON_START:-false}
 
-use_always_keep_filter: true
-use_cp_iv_filter: true
+use_always_keep_filter: ${PGB_USE_ALWAYS_KEEP_FILTER:-true}
+use_cp_iv_filter: ${PGB_CP_IV_FILTER:-true}
 
 # TODO: More sensible defaults for this
 always_keep:
-    Mew:
-        keep: true
+    Lapras:
+        keep: ${PGB_ALWAYS_KEEP_LAPRAS:-false}
+    Moltres:
+        keep: ${PGB_ALWAYS_KEEP_MOLTRES:-false}
+    Zapdos:
+        keep: ${PGB_ALWAYS_KEEP_ZAPDOS:-false}
+    Articuno:
+        keep: ${PGB_ALWAYS_KEEP_ARTICUNO:-false}
     Mewtwo:
-        keep: true
+        keep: ${PGB_ALWAYS_KEEP_MEWTWO:-true}
+    Dragonite:
+        keep: ${PGB_ALWAYS_KEEP_DRAGONITE:-false}
+    Snorlax:
+        keep: ${PGB_ALWAYS_KEEP_SNORLAX:-false}
+    Mew:
+        keep: ${PGB_ALWAYS_KEEP_MEW:-true}
+    Arcanine:
+        keep: ${PGB_ALWAYS_KEEP_ARCANINE:-false}
+    Vaporeon:
+        keep: ${PGB_ALWAYS_KEEP_VAPOREON:-false}
+    Gyarados:
+        keep: ${PGB_ALWAYS_KEEP_GYARADOS:-false}
+    Exeggutor:
+        keep: ${PGB_ALWAYS_KEEP_EXEGGUTOR:-false}
+    Muk:
+        keep: ${PGB_ALWAYS_KEEP_MUK:-false}
+    Weezing:
+        keep: ${PGB_ALWAYS_KEEP_WEEZING:-false}
+    Flareon:
+        keep: ${PGB_ALWAYS_KEEP_FLAREON:-false}
+    Growlithe:
+        keep: ${PGB_ALWAYS_KEEP_GROWLITHE:-false}
+    Dragonair:
+        keep: ${PGB_ALWAYS_KEEP_DRAGONAIR:-false}
+    Grimer:
+        keep: ${PGB_ALWAYS_KEEP_GRIMER:-false}
+    Magikarp:
+        keep: ${PGB_ALWAYS_KEEP_MAGIKARP:-false}
+    Exeggcute:
+        keep: ${PGB_ALWAYS_KEEP_EXEGGCUTE:-false}
+    Eevee:
+        keep: ${PGB_ALWAYS_KEEP_EEVEE:-false}
+    Slowbro:
+        keep: ${PGB_ALWAYS_KEEP_SLOWBRO:-false}
+    Victreebel:
+        keep: ${PGB_ALWAYS_KEEP_VICTREEBEL:-false}
+    Machamp:
+        keep: ${PGB_ALWAYS_KEEP_MACHAMP:-false}
+    Poliwrath:
+        keep: ${PGB_ALWAYS_KEEP_POLIWRATH:-false}
+    Clefable:
+        keep: ${PGB_ALWAYS_KEEP_CLEFABLE:-false}
+    Nidoking:
+        keep: ${PGB_ALWAYS_KEEP_NIDOKING:-false}
+    Venusaur:
+        keep: ${PGB_ALWAYS_KEEP_VENUSAUR:-false}
+    Charizard:
+        keep: ${PGB_ALWAYS_KEEP_CHARIZARD:-false}
+    Golduck:
+        keep: ${PGB_ALWAYS_KEEP_GOLDUCK:-false}
+    Nidoqueen:
+        keep: ${PGB_ALWAYS_KEEP_NIDOQUEEN:-false}
+    Vileplume:
+        keep: ${PGB_ALWAYS_KEEP_VILEPLUME:-false}
+    Blastoise:
+        keep: ${PGB_ALWAYS_KEEP_BLASTOISE:-false}
+    Omastar:
+        keep: ${PGB_ALWAYS_KEEP_OMASTAR:-false}
+    Aerodactyl:
+        keep: ${PGB_ALWAYS_KEEP_AERODACTYL:-false}
+    Golem:
+        keep: ${PGB_ALWAYS_KEEP_GOLEM:-false}
+    Wigglytuff:
+        keep: ${PGB_ALWAYS_KEEP_WIGGLYTUFF:-false}
+    Dewgong:
+        keep: ${PGB_ALWAYS_KEEP_DEWGONG:-false}
+    Ninetales:
+        keep: ${PGB_ALWAYS_KEEP_NINETALES:-false}
+    Magmar:
+        keep: ${PGB_ALWAYS_KEEP_MAGMAR:-false}
+    Kabutops:
+        keep: ${PGB_ALWAYS_KEEP_KABUTOPS:-false}
+    Electabuzz:
+        keep: ${PGB_ALWAYS_KEEP_ELECTABUZZ:-false}
+    Starmie:
+        keep: ${PGB_ALWAYS_KEEP_STARMIE:-false}
+    Jolteon:
+        keep: ${PGB_ALWAYS_KEEP_JOLTEON:-false}
+    Rapidash:
+        keep: ${PGB_ALWAYS_KEEP_RAPIDASH:-false}
+    Pinsir:
+        keep: ${PGB_ALWAYS_KEEP_PINSIR:-false}
+    Scyther:
+        keep: ${PGB_ALWAYS_KEEP_SCYTHER:-false}
+    Tentacruel:
+        keep: ${PGB_ALWAYS_KEEP_TENTACRUEL:-false}
+    Gengar:
+        keep: ${PGB_ALWAYS_KEEP_GENGAR:-false}
+    Hypno:
+        keep: ${PGB_ALWAYS_KEEP_HYPNO:-false}
+    Pidgeot:
+        keep: ${PGB_ALWAYS_KEEP_PIDGEOT:-false}
+    Rhydon:
+        keep: ${PGB_ALWAYS_KEEP_RHYDON:-false}
+    Seaking:
+        keep: ${PGB_ALWAYS_KEEP_SEAKING:-false}
+    Kangaskhan:
+        keep: ${PGB_ALWAYS_KEEP_KANGASKHAN:-false}
+    Koffing:
+        keep: ${PGB_ALWAYS_KEEP_KOFFING:-false}
+    Caterpie:
+        keep: ${PGB_ALWAYS_KEEP_CATERPIE:-false}
+    Weedle:
+        keep: ${PGB_ALWAYS_KEEP_WEEDLE:-false}
+    Diglett:
+        keep: ${PGB_ALWAYS_KEEP_DIGLETT:-false}
+    Metapod:
+        keep: ${PGB_ALWAYS_KEEP_METAPOD:-false}
+    Kakuna:
+        keep: ${PGB_ALWAYS_KEEP_KAKUNA:-false}
+    Rattata:
+        keep: ${PGB_ALWAYS_KEEP_RATTATA:-false}
+    Abra:
+        keep: ${PGB_ALWAYS_KEEP_ABRA:-false}
+    Zubat:
+        keep: ${PGB_ALWAYS_KEEP_ZUBAT:-false}
+    Chansey:
+        keep: ${PGB_ALWAYS_KEEP_CHANSEY:-false}
+    Pidgey:
+        keep: ${PGB_ALWAYS_KEEP_PIDGEY:-false}
+    Spearow:
+        keep: ${PGB_ALWAYS_KEEP_SPEAROW:-false}
+    Meowth:
+        keep: ${PGB_ALWAYS_KEEP_MEOWTH:-false}
+    Krabby:
+        keep: ${PGB_ALWAYS_KEEP_KRABBY:-false}
+    Sandshrew:
+        keep: ${PGB_ALWAYS_KEEP_SANDSHREW:-false}
+    Poliwag:
+        keep: ${PGB_ALWAYS_KEEP_POLIWAG:-false}
+    Horsea:
+        keep: ${PGB_ALWAYS_KEEP_HORSEA:-false}
+    Gastly:
+        keep: ${PGB_ALWAYS_KEEP_GASTLY:-false}
+    Ekans:
+        keep: ${PGB_ALWAYS_KEEP_EKANS:-false}
+    Shellder:
+        keep: ${PGB_ALWAYS_KEEP_SHELLDER:-false}
+    Vulpix:
+        keep: ${PGB_ALWAYS_KEEP_VULPIX:-false}
+    Voltorb:
+        keep: ${PGB_ALWAYS_KEEP_VOLTORB:-false}
+    Geodude:
+        keep: ${PGB_ALWAYS_KEEP_GEODUDE:-false}
+    Doduo:
+        keep: ${PGB_ALWAYS_KEEP_DODUO:-false}
+    Onix:
+        keep: ${PGB_ALWAYS_KEEP_ONIX:-false}
+    Mankey:
+        keep: ${PGB_ALWAYS_KEEP_MANKEY:-false}
+    Pikachu:
+        keep: ${PGB_ALWAYS_KEEP_PIKACHU:-false}
+    Magnemite:
+        keep: ${PGB_ALWAYS_KEEP_MAGNEMITE:-false}
+    Tentacool:
+        keep: ${PGB_ALWAYS_KEEP_TENTACOOL:-false}
+    Paras:
+        keep: ${PGB_ALWAYS_KEEP_PARAS:-false}
+    Jigglypuff:
+        keep: ${PGB_ALWAYS_KEEP_JIGGLYPUFF:-false}
+    Ditto:
+        keep: ${PGB_ALWAYS_KEEP_DITTO:-false}
+    Staryu:
+        keep: ${PGB_ALWAYS_KEEP_STARYU:-false}
+    Charmander:
+        keep: ${PGB_ALWAYS_KEEP_CHARMANDER:-false}
+    Goldeen:
+        keep: ${PGB_ALWAYS_KEEP_GOLDEEN:-false}
+    Squirtle:
+        keep: ${PGB_ALWAYS_KEEP_SQUIRTLE:-false}
+    Cubone:
+        keep: ${PGB_ALWAYS_KEEP_CUBONE:-false}
+    Venonat:
+        keep: ${PGB_ALWAYS_KEEP_VENONAT:-false}
+    Bulbasaur:
+        keep: ${PGB_ALWAYS_KEEP_BULBASAUR:-false}
+    Drowzee:
+        keep: ${PGB_ALWAYS_KEEP_DROWZEE:-false}
+    Machop:
+        keep: ${PGB_ALWAYS_KEEP_MACHOP:-false}
+    Psyduck:
+        keep: ${PGB_ALWAYS_KEEP_PSYDUCK:-false}
+    Seel:
+        keep: ${PGB_ALWAYS_KEEP_SEEL:-false}
+    Kabuto:
+        keep: ${PGB_ALWAYS_KEEP_KABUTO:-false}
+    Bellsprout:
+        keep: ${PGB_ALWAYS_KEEP_BELLSPROUT:-false}
+    Omanyte:
+        keep: ${PGB_ALWAYS_KEEP_OMANYTE:-false}
+    Kadabra:
+        keep: ${PGB_ALWAYS_KEEP_KADABRA:-false}
+    Oddish:
+        keep: ${PGB_ALWAYS_KEEP_ODDISH:-false}
+    Dugtrio:
+        keep: ${PGB_ALWAYS_KEEP_DUGTRIO:-false}
+    Rhyhorn:
+        keep: ${PGB_ALWAYS_KEEP_RHYHORN:-false}
+    Clefairy:
+        keep: ${PGB_ALWAYS_KEEP_CLEFAIRY:-false}
+    Slowpoke:
+        keep: ${PGB_ALWAYS_KEEP_SLOWPOKE:-false}
+    Pidgeotto:
+        keep: ${PGB_ALWAYS_KEEP_PIDGEOTTO:-false}
+    Farfetched:
+        keep: ${PGB_ALWAYS_KEEP_FARFETCHED:-false}
+    Poliwhirl:
+        keep: ${PGB_ALWAYS_KEEP_POLIWHIRL:-false}
+    Nidorino:
+        keep: ${PGB_ALWAYS_KEEP_NIDORINO:-false}
+    Haunter:
+        keep: ${PGB_ALWAYS_KEEP_HAUNTER:-false}
+    Nidorina:
+        keep: ${PGB_ALWAYS_KEEP_NIDORINA:-false}
+    Graveler:
+        keep: ${PGB_ALWAYS_KEEP_GRAVELER:-false}
+    Beedrill:
+        keep: ${PGB_ALWAYS_KEEP_BEEDRILL:-false}
+    Raticate:
+        keep: ${PGB_ALWAYS_KEEP_RATICATE:-false}
+    Butterfree:
+        keep: ${PGB_ALWAYS_KEEP_BUTTERFREE:-false}
+    Hitmonlee:
+        keep: ${PGB_ALWAYS_KEEP_HITMONLEE:-false}
+    Ponyta:
+        keep: ${PGB_ALWAYS_KEEP_PONYTA:-false}
+    Hitmonchan:
+        keep: ${PGB_ALWAYS_KEEP_HITMONCHAN:-false}
+    Charmeleon:
+        keep: ${PGB_ALWAYS_KEEP_CHARMELEON:-false}
+    Wartortle:
+        keep: ${PGB_ALWAYS_KEEP_WARTORTLE:-false}
+    Persian:
+        keep: ${PGB_ALWAYS_KEEP_PERSIAN:-false}
+    Lickitung:
+        keep: ${PGB_ALWAYS_KEEP_LICKITUNG:-false}
+    Ivysaur:
+        keep: ${PGB_ALWAYS_KEEP_IVYSAUR:-false}
+    Electrode:
+        keep: ${PGB_ALWAYS_KEEP_ELECTRODE:-false}
+    Marowak:
+        keep: ${PGB_ALWAYS_KEEP_MAROWAK:-false}
+    Gloom:
+        keep: ${PGB_ALWAYS_KEEP_GLOOM:-false}
+    Porygon:
+        keep: ${PGB_ALWAYS_KEEP_PORYGON:-false}
+    Seadra:
+        keep: ${PGB_ALWAYS_KEEP_SEADRA:-false}
+    Jynx:
+        keep: ${PGB_ALWAYS_KEEP_JYNX:-false}
+    Weepinbell:
+        keep: ${PGB_ALWAYS_KEEP_WEEPINBELL:-false}
+    Tangela:
+        keep: ${PGB_ALWAYS_KEEP_TANGELA:-false}
+    Fearow:
+        keep: ${PGB_ALWAYS_KEEP_FEAROW:-false}
+    Parasect:
+        keep: ${PGB_ALWAYS_KEEP_PARASECT:-false}
+    Machoke:
+        keep: ${PGB_ALWAYS_KEEP_MACHOKE:-false}
+    Arbok:
+        keep: ${PGB_ALWAYS_KEEP_ARBOK:-false}
+    Sandslash:
+        keep: ${PGB_ALWAYS_KEEP_SANDSLASH:-false}
+    Alakazam:
+        keep: ${PGB_ALWAYS_KEEP_ALAKAZAM:-false}
+    Kingler:
+        keep: ${PGB_ALWAYS_KEEP_KINGLER:-false}
+    Dodrio:
+        keep: ${PGB_ALWAYS_KEEP_DODRIO:-false}
+    Tauros:
+        keep: ${PGB_ALWAYS_KEEP_TAUROS:-false}
+    Primeape:
+        keep: ${PGB_ALWAYS_KEEP_PRIMEAPE:-false}
+    Magneton:
+        keep: ${PGB_ALWAYS_KEEP_MAGNETON:-false}
+    Venomoth:
+        keep: ${PGB_ALWAYS_KEEP_VENOMOTH:-false}
+    Golbat:
+        keep: ${PGB_ALWAYS_KEEP_GOLBAT:-false}
+    Raichu:
+        keep: ${PGB_ALWAYS_KEEP_RAICHU:-false}
+    Cloyster:
+        keep: ${PGB_ALWAYS_KEEP_CLOYSTER:-false}
+    Mr. Mime:
+        keep: ${PGB_ALWAYS_KEEP_MIME:-false}
 
 # TODO: More sensible defaults for this
 cp_iv_rules:
     # default rule if Pokemon isn't in list
     default:
-        release_below_cp: 500
-        release_below_iv: 0.9
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_DEFAULT:-500}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_DEFAULT:-0.9}
+        logic: ${PGB_RELEASE_LOGIC_DEFAULT:-and}
     Lapras:
-        release_below_cp: 1041
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_LAPRAS:-1041}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_LAPRAS:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_LAPRAS:-and}
     Moltres:
-        release_below_cp: 1132
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_MOLTRES:-1132}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_MOLTRES:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_MOLTRES:-and}
     Zapdos:
-        release_below_cp: 1087
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_ZAPDOS:-1087}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_ZAPDOS:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_ZAPDOS:-and}
     Articuno:
-        release_below_cp: 1039
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_ARTICUNO:-1039}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_ARTICUNO:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_ARTICUNO:-and}
     Mewtwo:
-        release_below_cp: 1447
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_MEWTWO:-1447}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_MEWTWO:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_MEWTWO:-and}
     Dragonite:
-        release_below_cp: 1221
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_DRAGONITE:-1221}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_DRAGONITE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_DRAGONITE:-and}
     Snorlax:
-        release_below_cp: 1087
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_SNORLAX:-1087}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_SNORLAX:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_SNORLAX:-and}
     Mew:
-        release_below_cp: 1152
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_MEW:-1152}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_MEW:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_MEW:-and}
     Arcanine:
-        release_below_cp: 1041
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_ARCANINE:-1041}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_ARCANINE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_ARCANINE:-and}
     Vaporeon:
-        release_below_cp: 984
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_VAPOREON:-984}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_VAPOREON:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_VAPOREON:-and}
     Gyarados:
-        release_below_cp: 938
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_GYARADOS:-938}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_GYARADOS:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_GYARADOS:-and}
     Exeggutor:
-        release_below_cp: 1032
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_EXEGGUTOR:-1032}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_EXEGGUTOR:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_EXEGGUTOR:-and}
     Muk:
-        release_below_cp: 909
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_MUK:-909}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_MUK:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_MUK:-and}
     Weezing:
-        release_below_cp: 784
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_WEEZING:-784}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_WEEZING:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_WEEZING:-and}
     Flareon:
-        release_below_cp: 924
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_FLAREON:-924}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_FLAREON:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_FLAREON:-and}
     Growlithe:
-        release_below_cp: 465
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_GROWLITHE:-465}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_GROWLITHE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_GROWLITHE:-and}
     Dragonair:
-        release_below_cp: 609
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_DRAGONAIR:-609}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_DRAGONAIR:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_DRAGONAIR:-and}
     Grimer:
-        release_below_cp: 448
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_GRIMER:-448}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_GRIMER:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_GRIMER:-and}
     Magikarp:
-        release_below_cp: 91
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_MAGIKARP:-91}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_MAGIKARP:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_MAGIKARP:-and}
     Exeggcute:
-        release_below_cp: 384
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_EXEGGCUTE:-384}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_EXEGGCUTE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_EXEGGCUTE:-and}
     Eevee:
-        release_below_cp: 376
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_EEVEE:-376}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_EEVEE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_EEVEE:-and}
     Slowbro:
-        release_below_cp: 907
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_SLOWBRO:-907}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_SLOWBRO:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_SLOWBRO:-and}
     Victreebel:
-        release_below_cp: 883
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_VICTREEBEL:-883}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_VICTREEBEL:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_VICTREEBEL:-and}
     Machamp:
-        release_below_cp: 907
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_MACHAMP:-907}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_MACHAMP:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_MACHAMP:-and}
     Poliwrath:
-        release_below_cp: 876
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_POLIWRATH:-876}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_POLIWRATH:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_POLIWRATH:-and}
     Clefable:
-        release_below_cp: 837
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_CLEFABLE:-837}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_CLEFABLE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_CLEFABLE:-and}
     Nidoking:
-        release_below_cp: 864
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_NIDOKING:-864}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_NIDOKING:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_NIDOKING:-and}
     Venusaur:
-        release_below_cp: 902
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_VENUSAUR:-902}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_VENUSAUR:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_VENUSAUR:-and}
     Charizard:
-        release_below_cp: 909
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_CHARIZARD:-909}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_CHARIZARD:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_CHARIZARD:-and}
     Golduck:
-        release_below_cp: 832
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_GOLDUCK:-832}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_GOLDUCK:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_GOLDUCK:-and}
     Nidoqueen:
-        release_below_cp: 868
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_NIDOQUEEN:-868}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_NIDOQUEEN:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_NIDOQUEEN:-and}
     Vileplume:
-        release_below_cp: 871
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_VILEPLUME:-871}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_VILEPLUME:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_VILEPLUME:-and}
     Blastoise:
-        release_below_cp: 888
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_BLASTOISE:-888}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_BLASTOISE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_BLASTOISE:-and}
     Omastar:
-        release_below_cp: 780
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_OMASTAR:-780}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_OMASTAR:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_OMASTAR:-and}
     Aerodactyl:
-        release_below_cp: 756
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_AERODACTYL:-756}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_AERODACTYL:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_AERODACTYL:-and}
     Golem:
-        release_below_cp: 804
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_GOLEM:-804}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_GOLEM:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_GOLEM:-and}
     Wigglytuff:
-        release_below_cp: 760
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_WIGGLYTUFF:-760}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_WIGGLYTUFF:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_WIGGLYTUFF:-and}
     Dewgong:
-        release_below_cp: 748
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_DEWGONG:-748}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_DEWGONG:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_DEWGONG:-and}
     Ninetales:
-        release_below_cp: 763
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_NINETALES:-763}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_NINETALES:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_NINETALES:-and}
     Magmar:
-        release_below_cp: 792
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_MAGMAR:-792}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_MAGMAR:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_MAGMAR:-and}
     Kabutops:
-        release_below_cp: 744
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_KABUTOPS:-744}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_KABUTOPS:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_KABUTOPS:-and}
     Electabuzz:
-        release_below_cp: 739
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_ELECTABUZZ:-739}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_ELECTABUZZ:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_ELECTABUZZ:-and}
     Starmie:
-        release_below_cp: 763
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_STARMIE:-763}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_STARMIE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_STARMIE:-and}
     Jolteon:
-        release_below_cp: 746
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_JOLTEON:-746}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_JOLTEON:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_JOLTEON:-and}
     Rapidash:
-        release_below_cp: 768
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_RAPIDASH:-768}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_RAPIDASH:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_RAPIDASH:-and}
     Pinsir:
-        release_below_cp: 741
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_PINSIR:-741}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_PINSIR:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_PINSIR:-and}
     Scyther:
-        release_below_cp: 724
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_SCYTHER:-724}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_SCYTHER:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_SCYTHER:-and}
     Tentacruel:
-        release_below_cp: 775
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_TENTACRUEL:-775}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_TENTACRUEL:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_TENTACRUEL:-and}
     Gengar:
-        release_below_cp: 724
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_GENGAR:-724}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_GENGAR:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_GENGAR:-and}
     Hypno:
-        release_below_cp: 763
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_HYPNO:-763}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_HYPNO:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_HYPNO:-and}
     Pidgeot:
-        release_below_cp: 729
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_PIDGEOT:-729}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_PIDGEOT:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_PIDGEOT:-and}
     Rhydon:
-        release_below_cp: 782
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_RHYDON:-782}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_RHYDON:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_RHYDON:-and}
     Seaking:
-        release_below_cp: 712
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_SEAKING:-712}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_SEAKING:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_SEAKING:-and}
     Kangaskhan:
-        release_below_cp: 712
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_KANGASKHAN:-712}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_KANGASKHAN:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_KANGASKHAN:-and}
     Koffing:
-        release_below_cp: 403
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_KOFFING:-403}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_KOFFING:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_KOFFING:-and}
     Caterpie:
-        release_below_cp: 156
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_CATERPIE:-156}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_CATERPIE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_CATERPIE:-and}
     Weedle:
-        release_below_cp: 156
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_WEEDLE:-156}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_WEEDLE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_WEEDLE:-and}
     Diglett:
-        release_below_cp: 158
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_DIGLETT:-158}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_DIGLETT:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_DIGLETT:-and}
     Metapod:
-        release_below_cp: 168
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_METAPOD:-168}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_METAPOD:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_METAPOD:-and}
     Kakuna:
-        release_below_cp: 170
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_KAKUNA:-170}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_KAKUNA:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_KAKUNA:-and}
     Rattata:
-        release_below_cp: 204
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_RATTATA:-204}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_RATTATA:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_RATTATA:-and}
     Abra:
-        release_below_cp: 208
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_ABRA:-208}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_ABRA:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_ABRA:-and}
     Zubat:
-        release_below_cp: 225
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_ZUBAT:-225}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_ZUBAT:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_ZUBAT:-and}
     Chansey:
-        release_below_cp: 235
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_CHANSEY:-235}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_CHANSEY:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_CHANSEY:-and}
     Pidgey:
-        release_below_cp: 330
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_PIDGEY:-330}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_PIDGEY:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_PIDGEY:-and}
     Spearow:
-        release_below_cp: 240
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_SPEAROW:-240}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_SPEAROW:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_SPEAROW:-and}
     Meowth:
-        release_below_cp: 264
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_MEOWTH:-264}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_MEOWTH:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_MEOWTH:-and}
     Krabby:
-        release_below_cp: 276
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_KRABBY:-276}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_KRABBY:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_KRABBY:-and}
     Sandshrew:
-        release_below_cp: 278
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_SANDSHREW:-278}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_SANDSHREW:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_SANDSHREW:-and}
     Poliwag:
-        release_below_cp: 278
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_POLIWAG:-278}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_POLIWAG:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_POLIWAG:-and}
     Horsea:
-        release_below_cp: 278
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_HORSEA:-278}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_HORSEA:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_HORSEA:-and}
     Gastly:
-        release_below_cp: 280
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_GASTLY:-280}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_GASTLY:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_GASTLY:-and}
     Ekans:
-        release_below_cp: 288
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_EKANS:-288}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_EKANS:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_EKANS:-and}
     Shellder:
-        release_below_cp: 288
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_SHELLDER:-288}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_SHELLDER:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_SHELLDER:-and}
     Vulpix:
-        release_below_cp: 290
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_VULPIX:-290}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_VULPIX:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_VULPIX:-and}
     Voltorb:
-        release_below_cp: 292
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_VOLTORB:-292}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_VOLTORB:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_VOLTORB:-and}
     Geodude:
-        release_below_cp: 297
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_GEODUDE:-297}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_GEODUDE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_GEODUDE:-and}
     Doduo:
-        release_below_cp: 297
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_DODUO:-297}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_DODUO:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_DODUO:-and}
     Onix:
-        release_below_cp: 300
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_ONIX:-300}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_ONIX:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_ONIX:-and}
     Mankey:
-        release_below_cp: 307
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_MANKEY:-307}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_MANKEY:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_MANKEY:-and}
     Pikachu:
-        release_below_cp: 309
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_PIKACHU:-309}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_PIKACHU:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_PIKACHU:-and}
     Magnemite:
-        release_below_cp: 312
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_MAGNEMITE:-312}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_MAGNEMITE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_MAGNEMITE:-and}
     Tentacool:
-        release_below_cp: 316
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_TENTACOOL:-316}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_TENTACOOL:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_TENTACOOL:-and}
     Paras:
-        release_below_cp: 319
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_PARAS:-319}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_PARAS:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_PARAS:-and}
     Jigglypuff:
-        release_below_cp: 321
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_JIGGLYPUFF:-321}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_JIGGLYPUFF:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_JIGGLYPUFF:-and}
     Ditto:
-        release_below_cp: 321
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_DITTO:-321}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_DITTO:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_DITTO:-and}
     Staryu:
-        release_below_cp: 326
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_STARYU:-326}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_STARYU:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_STARYU:-and}
     Charmander:
-        release_below_cp: 333
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_CHARMANDER:-333}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_CHARMANDER:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_CHARMANDER:-and}
     Goldeen:
-        release_below_cp: 336
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_GOLDEEN:-336}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_GOLDEEN:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_GOLDEEN:-and}
     Squirtle:
-        release_below_cp: 352
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_SQUIRTLE:-352}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_SQUIRTLE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_SQUIRTLE:-and}
     Cubone:
-        release_below_cp: 352
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_CUBONE:-352}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_CUBONE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_CUBONE:-and}
     Venonat:
-        release_below_cp: 360
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_VENONAT:-360}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_VENONAT:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_VENONAT:-and}
     Bulbasaur:
-        release_below_cp: 374
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_BULBASAUR:-374}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_BULBASAUR:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_BULBASAUR:-and}
     Drowzee:
-        release_below_cp: 374
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_DROWZEE:-374}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_DROWZEE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_DROWZEE:-and}
     Machop:
-        release_below_cp: 381
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_MACHOP:-381}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_MACHOP:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_MACHOP:-and}
     Psyduck:
-        release_below_cp: 386
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_PSYDUCK:-386}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_PSYDUCK:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_PSYDUCK:-and}
     Seel:
-        release_below_cp: 386
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_SEEL:-386}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_SEEL:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_SEEL:-and}
     Kabuto:
-        release_below_cp: 386
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_KABUTO:-386}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_KABUTO:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_KABUTO:-and}
     Bellsprout:
-        release_below_cp: 391
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_BELLSPROUT:-391}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_BELLSPROUT:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_BELLSPROUT:-and}
     Omanyte:
-        release_below_cp: 391
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_OMANYTE:-391}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_OMANYTE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_OMANYTE:-and}
     Kadabra:
-        release_below_cp: 396
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_KADABRA:-396}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_KADABRA:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_KADABRA:-and}
     Oddish:
-        release_below_cp: 400
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_ODDISH:-400}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_ODDISH:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_ODDISH:-and}
     Dugtrio:
-        release_below_cp: 408
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_DUGTRIO:-408}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_DUGTRIO:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_DUGTRIO:-and}
     Rhyhorn:
-        release_below_cp: 412
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_RHYHORN:-412}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_RHYHORN:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_RHYHORN:-and}
     Clefairy:
-        release_below_cp: 420
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_CLEFAIRY:-420}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_CLEFAIRY:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_CLEFAIRY:-and}
     Slowpoke:
-        release_below_cp: 424
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_SLOWPOKE:-424}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_SLOWPOKE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_SLOWPOKE:-and}
     Pidgeotto:
-        release_below_cp: 427
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_PIDGEOTTO:-427}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_PIDGEOTTO:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_PIDGEOTTO:-and}
     Farfetch'd:
-        release_below_cp: 441
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_FARFETCHED:-441}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_FARFETCHED:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_FARFETCHED:-and}
     Poliwhirl:
-        release_below_cp: 468
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_POLIWHIRL:-468}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_POLIWHIRL:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_POLIWHIRL:-and}
     Nidorino:
-        release_below_cp: 480
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_NIDORINO:-480}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_NIDORINO:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_NIDORINO:-and}
     Haunter:
-        release_below_cp: 482
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_HAUNTER:-482}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_HAUNTER:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_HAUNTER:-and}
     Nidorina:
-        release_below_cp: 489
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_NIDORINA:-489}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_NIDORINA:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_NIDORINA:-and}
     Graveler:
-        release_below_cp: 501
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_GRAVELER:-501}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_GRAVELER:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_GRAVELER:-and}
     Beedrill:
-        release_below_cp: 504
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_BEEDRILL:-504}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_BEEDRILL:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_BEEDRILL:-and}
     Raticate:
-        release_below_cp: 504
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_RATICATE:-504}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_RATICATE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_RATICATE:-and}
     Butterfree:
-        release_below_cp: 508
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_BUTTERFREE:-508}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_BUTTERFREE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_BUTTERFREE:-and}
     Hitmonlee:
-        release_below_cp: 520
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_HITMONLEE:-520}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_HITMONLEE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_HITMONLEE:-and}
     Ponyta:
-        release_below_cp: 530
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_PONYTA:-530}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_PONYTA:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_PONYTA:-and}
     Hitmonchan:
-        release_below_cp: 530
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_HITMONCHAN:-530}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_HITMONCHAN:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_HITMONCHAN:-and}
     Charmeleon:
-        release_below_cp: 544
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_CHARMELEON:-544}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_CHARMELEON:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_CHARMELEON:-and}
     Wartortle:
-        release_below_cp: 552
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_WARTORTLE:-552}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_WARTORTLE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_WARTORTLE:-and}
     Persian:
-        release_below_cp: 568
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_PERSIAN:-568}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_PERSIAN:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_PERSIAN:-and}
     Lickitung:
-        release_below_cp: 568
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_LICKITUNG:-568}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_LICKITUNG:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_LICKITUNG:-and}
     Ivysaur:
-        release_below_cp: 571
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_IVYSAUR:-571}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_IVYSAUR:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_IVYSAUR:-and}
     Electrode:
-        release_below_cp: 576
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_ELECTRODE:-576}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_ELECTRODE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_ELECTRODE:-and}
     Marowak:
-        release_below_cp: 578
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_MAROWAK:-578}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_MAROWAK:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_MAROWAK:-and}
     Gloom:
-        release_below_cp: 590
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_GLOOM:-590}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_GLOOM:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_GLOOM:-and}
     Porygon:
-        release_below_cp: 590
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_PORYGON:-590}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_PORYGON:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_PORYGON:-and}
     Seadra:
-        release_below_cp: 597
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_SEADRA:-597}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_SEADRA:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_SEADRA:-and}
     Jynx:
-        release_below_cp: 600
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_JYNX:-600}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_JYNX:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_JYNX:-and}
     Weepinbell:
-        release_below_cp: 602
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_WEEPINBELL:-602}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_WEEPINBELL:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_WEEPINBELL:-and}
     Tangela:
-        release_below_cp: 607
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_TANGELA:-607}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_TANGELA:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_TANGELA:-and}
     Fearow:
-        release_below_cp: 609
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_FEAROW:-609}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_FEAROW:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_FEAROW:-and}
     Parasect:
-        release_below_cp: 609
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_PARASECT:-609}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_PARASECT:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_PARASECT:-and}
     Machoke:
-        release_below_cp: 614
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_MACHOKE:-614}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_MACHOKE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_MACHOKE:-and}
     Arbok:
-        release_below_cp: 616
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_ARBOK:-616}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_ARBOK:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_ARBOK:-and}
     Sandslash:
-        release_below_cp: 631
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_SANDSLASH:-631}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_SANDSLASH:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_SANDSLASH:-and}
     Alakazam:
-        release_below_cp: 633
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_ALAKAZAM:-633}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_ALAKAZAM:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_ALAKAZAM:-and}
     Kingler:
-        release_below_cp: 636
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_KINGLER:-636}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_KINGLER:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_KINGLER:-and}
     Dodrio:
-        release_below_cp: 640
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_DODRIO:-640}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_DODRIO:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_DODRIO:-and}
     Tauros:
-        release_below_cp: 643
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_TAUROS:-643}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_TAUROS:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_TAUROS:-and}
     Primeape:
-        release_below_cp: 650
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_PRIMEAPE:-650}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_PRIMEAPE:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_PRIMEAPE:-and}
     Magneton:
-        release_below_cp: 657
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_MAGNETON:-657}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_MAGNETON:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_MAGNETON:-and}
     Venomoth:
-        release_below_cp: 660
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_VENOMOTH:-660}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_VENOMOTH:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_VENOMOTH:-and}
     Golbat:
-        release_below_cp: 672
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_GOLBAT:-672}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_GOLBAT:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_GOLBAT:-and}
     Raichu:
-        release_below_cp: 708
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_RAICHU:-708}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_RAICHU:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_RAICHU:-and}
     Cloyster:
-        release_below_cp: 717
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_CLOYSTER:-717}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_CLOYSTER:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_CLOYSTER:-and}
     Mr. Mime:
-        release_below_cp: 650
-        release_below_iv: 0.8
-        logic: and
+        release_below_cp: ${PGB_RELEASE_BELOW_CP_MIME:-650}
+        release_below_iv: ${PGB_RELEASE_BELOW_IV_MIME:-0.8}
+        logic: ${PGB_RELEASE_LOGIC_MIME:-and}
