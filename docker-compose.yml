@@ -1,6 +1,5 @@
 pogobot:
     build: .
-    restart: always
     environment:
         VIRTUAL_HOST: "pokesock.*"
         PGB_USERNAME: "username"
@@ -8,7 +7,7 @@ pogobot:
         PGB_GOOGLE_API_KEY: "google-api-key"
         PGB_LOCATION: "40.7811648,-73.9720392"
         PGB_RECYCLE_ITEMS: "true"
-        PGB_INITIAL_TRANSFER: "true"
+        PGB_TRANSFER_ON_START: "true"
         PGB_WALK_SPEED: "6"
     expose:
         - 8000
