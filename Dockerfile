@@ -12,8 +12,8 @@ RUN yum -y install epel-release && \
 		git && \
     yum -y clean all
 
-ENV OpenPoGoBotVersion master
-ENV OpenPoGoBotRepository https://github.com/torvitas/OpenPoGoBot.git
+ENV OpenPoGoBotVersion 5158254adfdd306d94edb34af78c36b38d21aa1f
+ENV OpenPoGoBotRepository https://github.com/OpenPoGo/OpenPoGoBot.git
 RUN mkdir -p /usr/local/pogobot && \
     cd /usr/local/pogobot && \
     git clone ${OpenPoGoBotRepository} . && \
