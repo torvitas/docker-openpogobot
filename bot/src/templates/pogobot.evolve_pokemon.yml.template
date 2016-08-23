@@ -15,11 +15,299 @@
 
 # Pick which Pokemon to evolve
 evolve_filter:
-    Pidgey:
-        evolve: true
-    Rattata:
-        evolve: true
-    Spearow:
-        evolve: true
+    Lapras:
+        evolve: ${PGB_EVOLVE_LAPRAS:-false}
+    Moltres:
+        evolve: ${PGB_EVOLVE_MOLTRES:-false}
+    Zapdos:
+        evolve: ${PGB_EVOLVE_ZAPDOS:-false}
+    Articuno:
+        evolve: ${PGB_EVOLVE_ARTICUNO:-false}
+    Mewtwo:
+        evolve: ${PGB_EVOLVE_MEWTWO:-false}
+    Dragonite:
+        evolve: ${PGB_EVOLVE_DRAGONITE:-false}
+    Snorlax:
+        evolve: ${PGB_EVOLVE_SNORLAX:-false}
+    Mew:
+        evolve: ${PGB_EVOLVE_MEW:-false}
+    Arcanine:
+        evolve: ${PGB_EVOLVE_ARCANINE:-false}
+    Vaporeon:
+        evolve: ${PGB_EVOLVE_VAPOREON:-false}
+    Gyarados:
+        evolve: ${PGB_EVOLVE_GYARADOS:-false}
+    Exeggutor:
+        evolve: ${PGB_EVOLVE_EXEGGUTOR:-false}
+    Muk:
+        evolve: ${PGB_EVOLVE_MUK:-false}
+    Weezing:
+        evolve: ${PGB_EVOLVE_WEEZING:-false}
+    Flareon:
+        evolve: ${PGB_EVOLVE_FLAREON:-false}
+    Growlithe:
+        evolve: ${PGB_EVOLVE_GROWLITHE:-false}
+    Dragonair:
+        evolve: ${PGB_EVOLVE_DRAGONAIR:-false}
+    Grimer:
+        evolve: ${PGB_EVOLVE_GRIMER:-false}
+    Magikarp:
+        evolve: ${PGB_EVOLVE_MAGIKARP:-false}
+    Exeggcute:
+        evolve: ${PGB_EVOLVE_EXEGGCUTE:-false}
+    Eevee:
+        evolve: ${PGB_EVOLVE_EEVEE:-false}
+    Slowbro:
+        evolve: ${PGB_EVOLVE_SLOWBRO:-false}
+    Victreebel:
+        evolve: ${PGB_EVOLVE_VICTREEBEL:-false}
+    Machamp:
+        evolve: ${PGB_EVOLVE_MACHAMP:-false}
+    Poliwrath:
+        evolve: ${PGB_EVOLVE_POLIWRATH:-false}
+    Clefable:
+        evolve: ${PGB_EVOLVE_CLEFABLE:-false}
+    Nidoking:
+        evolve: ${PGB_EVOLVE_NIDOKING:-false}
+    Venusaur:
+        evolve: ${PGB_EVOLVE_VENUSAUR:-false}
+    Charizard:
+        evolve: ${PGB_EVOLVE_CHARIZARD:-false}
+    Golduck:
+        evolve: ${PGB_EVOLVE_GOLDUCK:-false}
+    Nidoqueen:
+        evolve: ${PGB_EVOLVE_NIDOQUEEN:-false}
+    Vileplume:
+        evolve: ${PGB_EVOLVE_VILEPLUME:-false}
+    Blastoise:
+        evolve: ${PGB_EVOLVE_BLASTOISE:-false}
+    Omastar:
+        evolve: ${PGB_EVOLVE_OMASTAR:-false}
+    Aerodactyl:
+        evolve: ${PGB_EVOLVE_AERODACTYL:-false}
+    Golem:
+        evolve: ${PGB_EVOLVE_GOLEM:-false}
+    Wigglytuff:
+        evolve: ${PGB_EVOLVE_WIGGLYTUFF:-false}
+    Dewgong:
+        evolve: ${PGB_EVOLVE_DEWGONG:-false}
+    Ninetales:
+        evolve: ${PGB_EVOLVE_NINETALES:-false}
+    Magmar:
+        evolve: ${PGB_EVOLVE_MAGMAR:-false}
+    Kabutops:
+        evolve: ${PGB_EVOLVE_KABUTOPS:-false}
+    Electabuzz:
+        evolve: ${PGB_EVOLVE_ELECTABUZZ:-false}
+    Starmie:
+        evolve: ${PGB_EVOLVE_STARMIE:-false}
+    Jolteon:
+        evolve: ${PGB_EVOLVE_JOLTEON:-false}
+    Rapidash:
+        evolve: ${PGB_EVOLVE_RAPIDASH:-false}
+    Pinsir:
+        evolve: ${PGB_EVOLVE_PINSIR:-false}
+    Scyther:
+        evolve: ${PGB_EVOLVE_SCYTHER:-false}
+    Tentacruel:
+        evolve: ${PGB_EVOLVE_TENTACRUEL:-false}
+    Gengar:
+        evolve: ${PGB_EVOLVE_GENGAR:-false}
+    Hypno:
+        evolve: ${PGB_EVOLVE_HYPNO:-false}
+    Pidgeot:
+        evolve: ${PGB_EVOLVE_PIDGEOT:-false}
+    Rhydon:
+        evolve: ${PGB_EVOLVE_RHYDON:-false}
+    Seaking:
+        evolve: ${PGB_EVOLVE_SEAKING:-false}
+    Kangaskhan:
+        evolve: ${PGB_EVOLVE_KANGASKHAN:-false}
+    Koffing:
+        evolve: ${PGB_EVOLVE_KOFFING:-false}
+    Caterpie:
+        evolve: ${PGB_EVOLVE_CATERPIE:-false}
     Weedle:
-        evolve: true
+        evolve: ${PGB_EVOLVE_WEEDLE:-true}
+    Diglett:
+        evolve: ${PGB_EVOLVE_DIGLETT:-false}
+    Metapod:
+        evolve: ${PGB_EVOLVE_METAPOD:-false}
+    Kakuna:
+        evolve: ${PGB_EVOLVE_KAKUNA:-false}
+    Rattata:
+        evolve: ${PGB_EVOLVE_RATTATA:-true}
+    Abra:
+        evolve: ${PGB_EVOLVE_ABRA:-false}
+    Zubat:
+        evolve: ${PGB_EVOLVE_ZUBAT:-false}
+    Chansey:
+        evolve: ${PGB_EVOLVE_CHANSEY:-false}
+    Pidgey:
+        evolve: ${PGB_EVOLVE_PIDGEY:-true}
+    Spearow:
+        evolve: ${PGB_EVOLVE_SPEAROW:-true}
+    Meowth:
+        evolve: ${PGB_EVOLVE_MEOWTH:-false}
+    Krabby:
+        evolve: ${PGB_EVOLVE_KRABBY:-false}
+    Sandshrew:
+        evolve: ${PGB_EVOLVE_SANDSHREW:-false}
+    Poliwag:
+        evolve: ${PGB_EVOLVE_POLIWAG:-false}
+    Horsea:
+        evolve: ${PGB_EVOLVE_HORSEA:-false}
+    Gastly:
+        evolve: ${PGB_EVOLVE_GASTLY:-false}
+    Ekans:
+        evolve: ${PGB_EVOLVE_EKANS:-false}
+    Shellder:
+        evolve: ${PGB_EVOLVE_SHELLDER:-false}
+    Vulpix:
+        evolve: ${PGB_EVOLVE_VULPIX:-false}
+    Voltorb:
+        evolve: ${PGB_EVOLVE_VOLTORB:-false}
+    Geodude:
+        evolve: ${PGB_EVOLVE_GEODUDE:-false}
+    Doduo:
+        evolve: ${PGB_EVOLVE_DODUO:-false}
+    Onix:
+        evolve: ${PGB_EVOLVE_ONIX:-false}
+    Mankey:
+        evolve: ${PGB_EVOLVE_MANKEY:-false}
+    Pikachu:
+        evolve: ${PGB_EVOLVE_PIKACHU:-false}
+    Magnemite:
+        evolve: ${PGB_EVOLVE_MAGNEMITE:-false}
+    Tentacool:
+        evolve: ${PGB_EVOLVE_TENTACOOL:-false}
+    Paras:
+        evolve: ${PGB_EVOLVE_PARAS:-false}
+    Jigglypuff:
+        evolve: ${PGB_EVOLVE_JIGGLYPUFF:-false}
+    Ditto:
+        evolve: ${PGB_EVOLVE_DITTO:-false}
+    Staryu:
+        evolve: ${PGB_EVOLVE_STARYU:-false}
+    Charmander:
+        evolve: ${PGB_EVOLVE_CHARMANDER:-false}
+    Goldeen:
+        evolve: ${PGB_EVOLVE_GOLDEEN:-false}
+    Squirtle:
+        evolve: ${PGB_EVOLVE_SQUIRTLE:-false}
+    Cubone:
+        evolve: ${PGB_EVOLVE_CUBONE:-false}
+    Venonat:
+        evolve: ${PGB_EVOLVE_VENONAT:-false}
+    Bulbasaur:
+        evolve: ${PGB_EVOLVE_BULBASAUR:-false}
+    Drowzee:
+        evolve: ${PGB_EVOLVE_DROWZEE:-false}
+    Machop:
+        evolve: ${PGB_EVOLVE_MACHOP:-false}
+    Psyduck:
+        evolve: ${PGB_EVOLVE_PSYDUCK:-false}
+    Seel:
+        evolve: ${PGB_EVOLVE_SEEL:-false}
+    Kabuto:
+        evolve: ${PGB_EVOLVE_KABUTO:-false}
+    Bellsprout:
+        evolve: ${PGB_EVOLVE_BELLSPROUT:-false}
+    Omanyte:
+        evolve: ${PGB_EVOLVE_OMANYTE:-false}
+    Kadabra:
+        evolve: ${PGB_EVOLVE_KADABRA:-false}
+    Oddish:
+        evolve: ${PGB_EVOLVE_ODDISH:-false}
+    Dugtrio:
+        evolve: ${PGB_EVOLVE_DUGTRIO:-false}
+    Rhyhorn:
+        evolve: ${PGB_EVOLVE_RHYHORN:-false}
+    Clefairy:
+        evolve: ${PGB_EVOLVE_CLEFAIRY:-false}
+    Slowpoke:
+        evolve: ${PGB_EVOLVE_SLOWPOKE:-false}
+    Pidgeotto:
+        evolve: ${PGB_EVOLVE_PIDGEOTTO:-false}
+    Farfetched:
+        evolve: ${PGB_EVOLVE_FARFETCHED:-false}
+    Poliwhirl:
+        evolve: ${PGB_EVOLVE_POLIWHIRL:-false}
+    Nidorino:
+        evolve: ${PGB_EVOLVE_NIDORINO:-false}
+    Haunter:
+        evolve: ${PGB_EVOLVE_HAUNTER:-false}
+    Nidorina:
+        evolve: ${PGB_EVOLVE_NIDORINA:-false}
+    Graveler:
+        evolve: ${PGB_EVOLVE_GRAVELER:-false}
+    Beedrill:
+        evolve: ${PGB_EVOLVE_BEEDRILL:-false}
+    Raticate:
+        evolve: ${PGB_EVOLVE_RATICATE:-false}
+    Butterfree:
+        evolve: ${PGB_EVOLVE_BUTTERFREE:-false}
+    Hitmonlee:
+        evolve: ${PGB_EVOLVE_HITMONLEE:-false}
+    Ponyta:
+        evolve: ${PGB_EVOLVE_PONYTA:-false}
+    Hitmonchan:
+        evolve: ${PGB_EVOLVE_HITMONCHAN:-false}
+    Charmeleon:
+        evolve: ${PGB_EVOLVE_CHARMELEON:-false}
+    Wartortle:
+        evolve: ${PGB_EVOLVE_WARTORTLE:-false}
+    Persian:
+        evolve: ${PGB_EVOLVE_PERSIAN:-false}
+    Lickitung:
+        evolve: ${PGB_EVOLVE_LICKITUNG:-false}
+    Ivysaur:
+        evolve: ${PGB_EVOLVE_IVYSAUR:-false}
+    Electrode:
+        evolve: ${PGB_EVOLVE_ELECTRODE:-false}
+    Marowak:
+        evolve: ${PGB_EVOLVE_MAROWAK:-false}
+    Gloom:
+        evolve: ${PGB_EVOLVE_GLOOM:-false}
+    Porygon:
+        evolve: ${PGB_EVOLVE_PORYGON:-false}
+    Seadra:
+        evolve: ${PGB_EVOLVE_SEADRA:-false}
+    Jynx:
+        evolve: ${PGB_EVOLVE_JYNX:-false}
+    Weepinbell:
+        evolve: ${PGB_EVOLVE_WEEPINBELL:-false}
+    Tangela:
+        evolve: ${PGB_EVOLVE_TANGELA:-false}
+    Fearow:
+        evolve: ${PGB_EVOLVE_FEAROW:-false}
+    Parasect:
+        evolve: ${PGB_EVOLVE_PARASECT:-false}
+    Machoke:
+        evolve: ${PGB_EVOLVE_MACHOKE:-false}
+    Arbok:
+        evolve: ${PGB_EVOLVE_ARBOK:-false}
+    Sandslash:
+        evolve: ${PGB_EVOLVE_SANDSLASH:-false}
+    Alakazam:
+        evolve: ${PGB_EVOLVE_ALAKAZAM:-false}
+    Kingler:
+        evolve: ${PGB_EVOLVE_KINGLER:-false}
+    Dodrio:
+        evolve: ${PGB_EVOLVE_DODRIO:-false}
+    Tauros:
+        evolve: ${PGB_EVOLVE_TAUROS:-false}
+    Primeape:
+        evolve: ${PGB_EVOLVE_PRIMEAPE:-false}
+    Magneton:
+        evolve: ${PGB_EVOLVE_MAGNETON:-false}
+    Venomoth:
+        evolve: ${PGB_EVOLVE_VENOMOTH:-false}
+    Golbat:
+        evolve: ${PGB_EVOLVE_GOLBAT:-false}
+    Raichu:
+        evolve: ${PGB_EVOLVE_RAICHU:-false}
+    Cloyster:
+        evolve: ${PGB_EVOLVE_CLOYSTER:-false}
+    Mr. Mime:
+        evolve: ${PGB_EVOLVE_MIME:-false}
