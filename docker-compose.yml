@@ -1,5 +1,5 @@
 pogobot:
-    build: .
+    build: ./bot
     environment:
         VIRTUAL_HOST: "pokesock.*"
         PGB_USERNAME: "username"
@@ -9,7 +9,10 @@ pogobot:
         PGB_RECYCLE_ITEMS: "true"
         PGB_TRANSFER_ON_START: "true"
         PGB_WALK_SPEED: "6"
-    expose:
-        - 8000
     volumes:
         - ./data:/usr/local/pogobot/data
+ui:
+    build: ./ui
+    environment:
+        VIRTUAL_HOST: "pokeui.*"
+        PGBUI_SOCKET_URL: "http://pokesock.localhost"

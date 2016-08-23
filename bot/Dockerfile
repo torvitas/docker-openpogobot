@@ -32,6 +32,7 @@ RUN cd /tmp/ && \
     rm -rf /tmp/*
 WORKDIR "/usr/local/pogobot/"
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+EXPOSE "8000"
 CMD ["python", "pokecli.py", "config/config.yml"]
 VOLUME ["/usr/local/pogobot/data"]
 COPY src/ /usr/local/
